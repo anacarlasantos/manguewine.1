@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #cab666; /* Cor dourada */
+}
+
+.home-screen {
+    text-align: center;
+    padding: 20px;
+}
+
+#entrar-button {
+    background-color: #920505; /* Cor vinho */
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.wine-list-screen {
+    display: none;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    /* Estilos para telas menores, tornando o botão responsivo */
+    #entrar-button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}
