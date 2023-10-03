@@ -1,19 +1,31 @@
-/* Estilo básico para o corpo da página */
+/* Estilo básico para o corpo da página com gradiente amarelo claro e marrom */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffd700; /* Fundo dourado claro */
-    background-image: url('sua-imagem-de-fundo.png'); /* Adicione o caminho da sua imagem de fundo aqui */
-    background-size: cover; /* Redimensionar a imagem para cobrir todo o fundo */
-    background-position: center bottom; /* Posicionar a imagem no centro inferior da tela */
+    background: linear-gradient(to bottom, #e3d794, #511f16); /* Gradiente de amarelo claro para marrom */
     color: #fff; /* Cor do texto padrão (branco) */
+}
+
+/* Estilo para o container da tela inicial */
+.home-screen {
+    text-align: center; /* Centraliza o conteúdo horizontalmente */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Isso define a altura da tela para ocupar a altura total do viewport */
+}
+
+/* Estilo para a logo */
+.home-screen img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho do container */
 }
 
 /* Estilo do botão "Entrar" */
 #entrar-button {
-    background-color: #990707; /* Fundo vermelho */
-    color: #e0d17a; /* Letras douradas */
+    background-color: #511f16; /* Fundo marrom */
+    color: #e3d794; /* Letras amarelo claro */
     padding: 15px 30px;
     border: none;
     font-size: 18px;
@@ -25,8 +37,8 @@ body {
 
 /* Estilo do rodapé */
 footer {
-    background-color: #990707; /* Fundo vermelho para o rodapé */
-    color: #e0d17a; /* Cor do texto do rodapé (dourado claro) */
+    background-color: #511f16; /* Fundo marrom para o rodapé */
+    color: #e3d794; /* Cor do texto do rodape (amarelo claro) */
     text-align: center;
     padding: 10px;
 }

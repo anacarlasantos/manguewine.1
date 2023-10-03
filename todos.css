@@ -101,6 +101,48 @@ header h1 {
     font-family: 'Helvetica', sans-serif; /* Fonte diferente para o texto */
 }
 
+/* ESTILO CONTATO.HTML*/
+
+.main-container {
+    background-color: #511f16; /* Defina aqui a cor marrom claro desejada */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+    min-height: 10vh;
+  }
+  
+  /* Estilo para o conteúdo dentro de main (CONTATO.HTML) */
+  main #location {
+    margin-bottom: 20px;
+  }
+  
+  #restaurant {
+    background-color: #ddbfba; /* Cor de fundo  */
+    padding: 20px; /* Aumente o padding para torná-lo um pouco maior */
+    border-radius: 5px; /* Mantenha a borda fina */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Mantenha a sombra sutil */
+    max-width: 400px; /* Aumente a largura máxima */
+    width: 100%; /* Garanta que ele ocupe toda a largura disponível */
+    margin: 0 auto; /* Centralize horizontalmente */
+    margin-top: 20px; /* Adicione um espaço entre os dois quadrados */
+    margin-bottom: 20px; /* Adicione margem inferior para afastá-lo do rodapé */
+  }
+  /* Estilo padrão para os links */
+a {
+    color: rgb(250, 250, 250); /* Cor normal dos links */
+    text-decoration: none; /* Remover sublinhado padrão */
+  }
+  
+  /* Estilo para os links visitados */
+  a:visited {
+    color: #3c150f; /* Cor dos links após serem clicados */
+  }
+
+
+
 /* Estilo do rodapé */
 footer {
     background-color: var(--color1); /* Cor de fundo do rodapé (Cor 1) */
