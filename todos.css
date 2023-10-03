@@ -6,7 +6,7 @@
     --color4: #260a07;     /* Cor 4 */
     --color5: #110000;     /* Cor 5 */
     --color6: rgba(0, 0, 0, 0.5); /* Cor de fundo mais transparente */
-    --text-color: #ffffff; /* Cor do texto (Branco) */
+    --text-color: #e3d794; /* Cor do texto (Branco) */
     --font-family: 'Arial', sans-serif; /* Fonte padrão */
 }
 
@@ -118,9 +118,13 @@ header h1 {
   main #location {
     margin-bottom: 20px;
   }
+  #location p strong {
+    font-size: 1.2em; /* Aumente o tamanho da fonte */
+    font-weight: bold; /* Torna a fonte mais grossa */
+  }
   
   #restaurant {
-    background-color: #ddbfba; /* Cor de fundo  */
+    background-color: #e3d794; /* Cor de fundo  */
     padding: 20px; /* Aumente o padding para torná-lo um pouco maior */
     border-radius: 5px; /* Mantenha a borda fina */
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Mantenha a sombra sutil */
@@ -132,13 +136,13 @@ header h1 {
   }
   /* Estilo padrão para os links */
 a {
-    color: rgb(250, 250, 250); /* Cor normal dos links */
+    color: #3c150f; /* Cor normal dos links */
     text-decoration: none; /* Remover sublinhado padrão */
   }
   
   /* Estilo para os links visitados */
   a:visited {
-    color: #3c150f; /* Cor dos links após serem clicados */
+    color: #2d0c07; /* Cor dos links após serem clicados */
   }
 
 

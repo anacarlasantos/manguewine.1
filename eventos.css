@@ -1,0 +1,163 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #511f16; /* Fundo marrom */
+    color: #e3d794; /* Cor do texto padrão (amarelo claro) */
+}
+
+/* Estilizar a imagem da logomarca */
+header img {
+    max-width: 100%; /* Ajusta a largura da imagem para a tela */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Evita margens indesejadas */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+}
+
+/* Estilo do cabeçalho (menu) */
+header {
+    background-color: #511f16; /* Fundo marrom para o cabeçalho */
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Estilizar o menu de navegação */
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: block; /* Alinha os itens verticalmente em dispositivos móveis */
+    margin-bottom: 10px; /* Espaçamento entre os itens do menu */
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #e3d794; /* Letras amarelo claro no menu */
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Estilo do título e do texto no cabeçalho */
+header h1 {
+    font-size: 24px; /* Reduz o tamanho da fonte para telas menores */
+    margin: 20px 0;
+    color: #e3d794; /* Cor do texto do título (amarelo claro) */
+}
+
+header p {
+    font-size: 16px; /* Reduz o tamanho da fonte para telas menores */
+    color: #e3d794; /* Cor do texto (amarelo claro) */
+}
+
+/* Estilo do botão "Veja os Próximos Eventos" */
+.cta-button {
+    background-color: #511f16; /* Fundo marrom para o botão */
+    color: #e3d794; /* Letras amarelo claro no botão */
+    padding: 10px 20px; /* Reduz o tamanho do botão */
+    border: none;
+    font-size: 16px; /* Reduz o tamanho da fonte para telas menores */
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+/* Estilo da seção de eventos em destaque */
+.destaque {
+    background-color: #511f16; /* Fundo marrom para a seção de eventos em destaque */
+    text-align: center;
+    padding: 40px 0;
+}
+
+.destaque h2 {
+    font-size: 24px; /* Reduz o tamanho da fonte para telas menores */
+    margin-bottom: 20px;
+    color: #e3d794; /* Cor do texto do título (amarelo claro) */
+}
+
+/* Estilo dos artigos de eventos em destaque */
+.evento {
+    margin: 20px;
+    padding: 20px;
+    background-color: #e3d794; /* Fundo amarelo claro para os artigos */
+    border-radius: 10px;
+}
+
+.evento img {
+    max-width: 100%;
+    height: auto;
+}
+
+.evento h3 {
+    font-size: 20px; /* Reduz o tamanho da fonte para telas menores */
+    color: #511f16; /* Cor do texto do título (marrom) */
+}
+
+.evento p {
+    font-size: 16px; /* Reduz o tamanho da fonte para telas menores */
+    color: #511f16; /* Cor do texto (marrom) */
+}
+
+/* Estilo do botão "Saiba Mais" */
+.saiba-mais-button {
+    background-color: #511f16; /* Fundo marrom para o botão */
+    color: #e3d794; /* Letras amarelo claro no botão */
+    padding: 10px 20px; /* Reduz o tamanho do botão */
+    border: none;
+    font-size: 16px; /* Reduz o tamanho da fonte para telas menores */
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Estilo da seção de eventos passados */
+.eventos-passados {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.eventos-passados h2 {
+    font-size: 24px; /* Reduz o tamanho da fonte para telas menores */
+    margin-bottom: 20px;
+    color: #e3d794; /* Cor do texto do título (amarelo claro) */
+}
+
+/* Estilo da seção de contato */
+.contato {
+    background-color: #511f16; /* Fundo marrom para a seção de contato */
+    text-align: center;
+    padding: 40px 0;
+}
+
+.contato h2 {
+    font-size: 24px; /* Reduz o tamanho da fonte para telas menores */
+    margin-bottom: 20px;
+    color: #e3d794; /* Cor do texto do título (amarelo claro) */
+}
+
+/* Estilo do botão "Fale Conosco" na seção de contato */
+.cta-button {
+    background-color: #511f16; /* Fundo marrom para o botão */
+    color: #e3d794; /* Letras amarelo claro no botão */
+    padding: 10px 20px; /* Reduz o tamanho do botão */
+    border: none;
+    font-size: 16px; /* Reduz o tamanho da fonte para telas menores */
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: #511f16; /* Fundo marrom para o rodapé */
+    color: #e3d794; /* Cor do texto do rodapé (amarelo claro) */
+    text-align: center;
+    padding: 10px;
+}
