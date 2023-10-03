@@ -7,21 +7,48 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="home-screen">
-        <img src="manguewine.png" alt="Mangue Wine Logo">
-        <p>Seja bem-vindo</p>
-        <button id="entrar-button">Entrar</button>
-    </div>
-
-    <script>
-        document.getElementById("entrar-button").addEventListener("click", function() {
-            window.location.href = "produtos.html";
-        });
-    </script>
 
     <footer>
         <p>&copy; 2023 MangueWine</p>
     </footer>
+
+    <script>
+       
+        fetch('data.json')
+            .then(response => response.json())
+            .then(data => {
+                const produtosContainer = document.getElementById("produtos-container");
+                produtosContainer.innerHTML = "";
+
+                // Iterar sobre os dados JSON e criar uma lista de produtos
+                data.forEach(vinho => {
+                    const produtoItem = document.createElement("div");
+                    produtoItem.classList.add("produto-item");
+
+                  
+                    const titulo = document.createElement("h2");
+                    titulo.textContent = vinho.title;
+
+                    const descricao = document.createElement("p");
+                    descricao.innerHTML = vinho.body;
+
+                    const imagem = document.createElement("img");
+                    imagem.src = vinho.imageURL;
+                    imagem.alt = vinho.title;
+
+                   
+                    produtoItem.appendChild(titulo);
+                    produtoItem.appendChild(imagem);
+                    produtoItem.appendChild(descricao);
+
+                  
+                    produtosContainer.appendChild(produtoItem);
+                });
+            })
+            .catch(error => {
+                console.error("Erro ao carregar o JSON:", error);
+            });
+    </script>
 </body>
 </html>
 
