@@ -5,6 +5,7 @@
     <!-- Configuração de media query -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MangueWine - Vinhos Costeiros</title>
+    
     <link rel="stylesheet" href="todos.css">
 </head>
 <body>
@@ -23,45 +24,48 @@
         </ul>
     </nav>
 
-    <!-- Adicione a seção de produtos aqui -->
-    <div class="product-container">
-        <!-- Produto 1 -->
-        <div class="product">
-            <img src="produto1.jpg" alt="Produto 1">
-            <h2>Produto 1</h2>
-            <p>Descrição do Produto 1</p>
-            <p class="price">R$ 29,99</p>
-            <button class="buy-button">Comprar</button>
-        </div>
 
-        <!-- Produto 2 -->
-        <div class="product">
-            <img src="produto2.jpg" alt="Produto 2">
-            <h2>Produto 2</h2>
-            <p>Descrição do Produto 2</p>
-            <p class="price">R$ 39,99</p>
-            <button class="buy-button">Comprar</button>
-        </div>
+    <div class="product-container" id="produtos-container">
+        <script>
+       
+       fetch('data.json')
+            .then(response => response.json())
+            .then(data => {
+                const produtosContainer = document.getElementById("produtos-container");
+                produtosContainer.innerHTML = "";
 
-        <!-- Produto 3 -->
-        <div class="product">
-            <img src="produto3.jpg" alt="Produto 3">
-            <h2>Produto 3</h2>
-            <p>Descrição do Produto 3</p>
-            <p class="price">R$ 49,99</p>
-            <button class="buy-button">Comprar</button>
-        </div>
+               
+                data.forEach(vinho => {
+                    const produtoItem = document.createElement("div");
+                    produtoItem.classList.add("produto-item");
 
-        <!-- Produto 4 -->
-        <div class="product">
-            <img src="produto4.jpg" alt="Produto 4">
-            <h2>Produto 4</h2>
-            <p>Descrição do Produto 4</p>
-            <p class="price">R$ 59,99</p>
-            <button class="buy-button">Comprar</button>
-        </div>
-    </div>
-    <!-- Fim da seção de produtos -->
+                  
+                    const titulo = document.createElement("h2");
+                    titulo.textContent = vinho.title;
+
+                    const descricao = document.createElement("p");
+                    descricao.innerHTML = vinho.body;
+
+                    const imagem = document.createElement("img");
+                    imagem.src = vinho.imageURL;
+                    imagem.alt = vinho.title;
+
+                   
+                    produtoItem.appendChild(titulo);
+                    produtoItem.appendChild(imagem);
+                    produtoItem.appendChild(descricao);
+
+                  
+                    produtosContainer.appendChild(produtoItem);
+                });
+            })
+
+            .catch(error => {
+                console.error("Erro ao carregar o JSON:", error);
+            });
+            window.onload = data.json;
+            
+    </script>
 
     <footer>
         <p>&copy; 2023 MangueWine</p>
