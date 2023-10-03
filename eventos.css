@@ -1,3 +1,15 @@
+/* Definindo variáveis de cores */
+:root {
+    --color1: #67291e;     /* Cor 1 */
+    --color2: #511f16;     /* Cor 2 */
+    --color3: #3c150f;     /* Cor 3 */
+    --color4: #260a07;     /* Cor 4 */
+    --color5: #110000;     /* Cor 5 */
+    --color6: rgba(0, 0, 0, 0.5); /* Cor de fundo mais transparente */
+    --text-color: #e3d794; /* Cor do texto (Branco) */
+    --font-family: 'Arial', sans-serif; /* Fonte padrão */
+}
+
 /* Estilo básico para o corpo da página com fundo marrom */
 body {
     font-family: Arial, sans-serif;
@@ -7,20 +19,24 @@ body {
     color: #e3d794; /* Cor do texto padrão (amarelo claro) */
 }
 
-/* Estilizar a imagem da logomarca */
-header img {
-    max-width: 100%; /* Ajusta a largura da imagem para a tela */
-    height: auto; /* Mantém a proporção da imagem */
-    display: block; /* Evita margens indesejadas */
-    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+header {
+    background-color: var(--color1); /* Cor de fundo do cabeçalho (menu) (Cor 1) */
+    border-top: 5px solid var(--color3); /* Contorno na parte superior (Cor 3) */
+    color: var(--text-color); /* Cor do texto do cabeçalho (menu) (Branco) */
+    padding: 10px;
+    text-align: center;
 }
 
-/* Estilo do cabeçalho (menu) */
-header {
-    background-color: #511f16; /* Fundo marrom para o cabeçalho */
-    text-align: center;
-    padding: 20px 0;
+header h1 {
+    margin: 0;
 }
+
+/* Estilo da divisão transparente entre o menu e o conteúdo */
+.header-divider {
+    background-color: var(--color6); /* Cor de fundo mais transparente */
+    height: 10px; /* Altura da divisão */
+}
+
 
 /* Estilizar o menu de navegação */
 .menu {

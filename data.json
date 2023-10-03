@@ -5,6 +5,7 @@
     "title": "Miolo Merlot",
     "body": "Descrição: O Miolo Merlot é um vinho tinto brasileiro produzido no Vale dos Vinhedos, no Rio Grande do Sul. É conhecido por sua cor rubi intensa e sabores frutados de amora e cereja, com um toque de especiarias. Possui taninos macios e é uma excelente escolha para quem está começando a explorar vinhos tintos.<br>Harmonização: Combina bem com carnes grelhadas, massas à base de molho de tomate e queijos suaves. <br> R$:189,90",
     "imageURL": "/assents/img/miolo.jpg"
+
   },
   {
     "userId": 1,
@@ -18,7 +19,8 @@
     "id": 3,
     "title": "Casa Valduga Espumante Brut",
     "body": "Descrição: Os espumantes brasileiros estão ganhando destaque internacional, e a Casa Valduga é uma vinícola renomada. Seu espumante Brut é elegante, com bolhas finas e persistentes, apresentando notas cítricas e florais. É uma ótima escolha para celebrar ocasiões especiais.<br>Harmonização: Perfeito como aperitivo e excelente para acompanhar frutos do mar, sushi e risotos.<br> R$:81,70",
-    "imageURL": "/assents/img/casa.vul"
+    "imageURL": "/assents/img/casa.vul.jpg",
+    "width" = 
   },
   {
     "userId": 1,
