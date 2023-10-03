@@ -18,7 +18,12 @@ body {
     background-color: #511f16; /* Fundo marrom */
     color: #e3d794; /* Cor do texto padrão (amarelo claro) */
 }
-
+.icon img {
+    max-width: 100%; /* A imagem não deve exceder a largura do contêiner */
+    height: auto; /* A altura ajustará automaticamente para manter a proporção */
+    display: block; /* Para evitar espaços indesejados abaixo da imagem */
+    margin: 0 auto; /* Centralize a imagem horizontalmente */
+}
 header {
     background-color: var(--color1); /* Cor de fundo do cabeçalho (menu) (Cor 1) */
     border-top: 5px solid var(--color3); /* Contorno na parte superior (Cor 3) */
@@ -67,6 +72,17 @@ header h1 {
 
 .menu ul li a:hover {
     background-color: var(--color4); /* Cor de fundo no hover do menu (Cor 4) */
+}
+
+/* Media query para tela menor (exemplo: smartphone) */
+@media screen and (max-width: 768px) {
+    .menu ul {
+        flex-direction: column; /* Altera a direção para empilhar itens verticalmente */
+    }
+
+    .menu ul li {
+        padding: 10px;
+    }
 }
 
 /* Estilo do título e do texto no cabeçalho */
