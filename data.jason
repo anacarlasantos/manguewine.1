@@ -2,25 +2,30 @@
   {
     "userId": 1,
     "id": 1,
-    "title": "Vinho Tinto",
-    "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+    "title": "Miolo Merlot",
+    "body": "Descrição: O Miolo Merlot é um vinho tinto brasileiro produzido no Vale dos Vinhedos, no Rio Grande do Sul. É conhecido por sua cor rubi intensa e sabores frutados de amora e cereja, com um toque de especiarias. Possui taninos macios e é uma excelente escolha para quem está começando a explorar vinhos tintos.<br>Harmonização: Combina bem com carnes grelhadas, massas à base de molho de tomate e queijos suaves.",
+    "imageURL": ""
   },
   {
     "userId": 1,
     "id": 2,
-    "title": "Vinho Branco",
-    "body": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla"
+    "title": "Salton Intenso Cabernet Franc",
+    "body": "Descrição: Este vinho brasileiro é elaborado pela Vinícola Salton, uma das mais tradicionais do país. O Salton Intenso Cabernet Franc apresenta notas de frutas vermelhas, como framboesa e groselha, além de toques de pimenta preta. É um vinho encorpado e estruturado.<br>Harmonização: Ideal para acompanhar carnes vermelhas assadas, cordeiro e pratos com molhos mais intensos.",
+    "imageURL": ""
   },
   {
     "userId": 1,
     "id": 3,
-    "title": "Vinho Rosé",
-    "body": "et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad\nvoluptatem doloribus vel accusantium quis pariatur\nmolestiae porro eius odio et labore et velit aut"
+    "title": "",
+    "body": "Descrição: Os espumantes brasileiros estão ganhando destaque internacional, e a Casa Valduga é uma vinícola renomada. Seu espumante Brut é elegante, com bolhas finas e persistentes, apresentando notas cítricas e florais. É uma ótima escolha para celebrar ocasiões especiais.<br>Harmonização: Perfeito como aperitivo e excelente para acompanhar frutos do mar, sushi e risotos.",
+    "imageURL": ""
   },
   {
     "userId": 1,
     "id": 4,
-    "title": "Vinho Espumante",
-    "body": "ullam et saepe reiciendis voluptatem adipisci\nsit amet autem assumenda provident rerum culpa\nquis hic commodi nesciunt rem tenetur doloremque ipsam iure\nquis sunt voluptatem rerum illo velit"
+    "title": "Aurora Chardonnay",
+    "body": "Descrição: A Chardonnay da Vinícola Aurora é um vinho branco brasileiro que se destaca por sua frescura e aromas de frutas tropicais, como abacaxi e pêssego. Possui boa acidez e é uma opção refrescante para os amantes de vinhos brancos.<br>Harmonização: Combina bem com saladas, frutos do mar grelhados e pratos leves à base de frango.",
+    "imageURL": ""
   }
 ]
+
