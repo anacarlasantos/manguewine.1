@@ -1,0 +1,26 @@
+<!DOCTYPE html> 
+<html Lang= "en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MangueWine</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+  <body>
+    <h1> Rótulos </h1>
+    <ul>
+        <li> </li>
+    </ul>   
+
+    <script>
+      const listEL = document.querySelector('ul');
+      fetch ('./data.json)
+          .then(res =>res.json())
+          .then(data=> {
+              data.forEach( post=> {
+                  <li> po
+                  listEl.insertAdjacentHTML('beforend', '<li> ${post.{post.title}</li>');
+
+              });
+          });
+    </script>
