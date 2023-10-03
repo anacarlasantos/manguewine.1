@@ -1,0 +1,120 @@
+/* Definindo variáveis de cores */
+:root {
+    --color1: #800020;       /* Bordô */
+    --color2: #800020;       /* Branco */
+    --color3: #d4c156e5;    /* Dourado */
+    --color4: #8b4513;      /* Marrom */
+    --color5: #f8f2f2;         /* Cinza Escuro */
+    --color6: rgba(0, 0, 0, 0.5); /* Cor de fundo mais transparente */
+    --text-color: #ffffff;  /* Cor do texto (Branco) */
+    --font-family: 'Arial', sans-serif; /* Fonte padrão */
+}
+
+/* Estilo básico para o corpo da página */
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    background-color: var(--color2); /* Cor de fundo (Branco) */
+    color: var(--color5); /* Cor do texto padrão (Cinza Escuro) */
+}
+
+/* Estilo do cabeçalho (menu) */
+header {
+    background-color: var(--color1); /* Cor de fundo do cabeçalho (menu) (Bordô) */
+    border-top: 5px solid var(--color3); /* Contorno Dourado na parte superior */
+    color: var(--text-color); /* Cor do texto do cabeçalho (menu) (Branco) */
+    padding: 10px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Estilo da divisão transparente entre o menu e o conteúdo */
+.header-divider {
+    background-color: var(--color6); /* Cor de fundo mais transparente */
+    height: 10px; /* Altura da divisão */
+}
+
+/* Estilo do menu centralizado */
+.menu {
+    background-color: var(--color1); /* Cor de fundo do menu (Bordô) */
+    color: var(--text-color); /* Cor do texto do menu (Branco) */
+    text-align: center;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul li {
+    padding: 10px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: var(--text-color); /* Cor do texto do menu (Branco) */
+    transition: background-color 0.3s ease;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.menu ul li a:hover {
+    background-color: var(--color4); /* Cor de fundo no hover do menu (Marrom) */
+}
+
+/* Estilo da seção "Sobre Nós" */
+.about-us {
+    padding: 20px;
+    text-align: justify; /* Justificar o texto */
+    background-color: var(--color6); /* Cor de fundo mais transparente */
+}
+
+.about-us img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Borda arredondada para a imagem */
+}
+
+.about-us h2 {
+    font-size: 24px;
+    margin: 20px 0;
+    color: var(--color1); /* Cor do título da seção (Bordô) */
+}
+
+.about-us p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--text-color); /* Cor do texto da seção (Branco) */
+    font-family: 'Helvetica', sans-serif; /* Fonte diferente para o texto */
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: var(--color1); /* Cor de fundo do rodapé (Bordô) */
+    color: var(--text-color); /* Cor do texto do rodapé (Branco) */
+    text-align: center;
+    padding: 10px;
+}
+
+/* Estilo responsivo para telas menores (como aplicativos) */
+@media screen and (max-width: 768px) {
+    .menu ul {
+        flex-direction: column; /* Exibe os itens do menu verticalmente em telas menores */
+    }
+}
+
+
+
+
+
+
+
+
+
