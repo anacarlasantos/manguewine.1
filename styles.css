@@ -1,18 +1,19 @@
+/* Estilo básico para o corpo da página */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #cab666; /* Cor dourada */
+    background-color: #ffd700; /* Fundo dourado claro */
+    background-image: url('sua-imagem-de-fundo.png'); /* Adicione o caminho da sua imagem de fundo aqui */
+    background-size: cover; /* Redimensionar a imagem para cobrir todo o fundo */
+    background-position: center bottom; /* Posicionar a imagem no centro inferior da tela */
+    color: #fff; /* Cor do texto padrão (branco) */
 }
 
-.home-screen {
-    text-align: center;
-    padding: 20px;
-}
-
+/* Estilo do botão "Entrar" */
 #entrar-button {
-    background-color: #920505; /* Cor vinho */
-    color: white;
+    background-color: #990707; /* Fundo vermelho */
+    color: #e0d17a; /* Letras douradas */
     padding: 15px 30px;
     border: none;
     font-size: 18px;
@@ -20,15 +21,13 @@ body {
     border-radius: 10px;
 }
 
-.wine-list-screen {
-    display: none;
-    padding: 20px;
+/* Estilize outros elementos da página conforme necessário */
+
+/* Estilo do rodapé */
+footer {
+    background-color: #990707; /* Fundo vermelho para o rodapé */
+    color: #e0d17a; /* Cor do texto do rodapé (dourado claro) */
+    text-align: center;
+    padding: 10px;
 }
 
-@media (max-width: 768px) {
-    /* Estilos para telas menores, tornando o botão responsivo */
-    #entrar-button {
-        padding: 10px 20px;
-        font-size: 16px;
-    }
-}

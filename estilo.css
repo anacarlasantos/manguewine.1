@@ -1,12 +1,12 @@
 /* Definindo variáveis de cores */
 :root {
-    --color1: #800020;       /* Bordô */
-    --color2: #800020;       /* Branco */
-    --color3: #d4c156e5;    /* Dourado */
-    --color4: #8b4513;      /* Marrom */
-    --color5: #f8f2f2;         /* Cinza Escuro */
+    --color1: #67291e;     /* Cor 1 */
+    --color2: #511f16;     /* Cor 2 */
+    --color3: #3c150f;     /* Cor 3 */
+    --color4: #260a07;     /* Cor 4 */
+    --color5: #110000;     /* Cor 5 */
     --color6: rgba(0, 0, 0, 0.5); /* Cor de fundo mais transparente */
-    --text-color: #ffffff;  /* Cor do texto (Branco) */
+    --text-color: #ffffff; /* Cor do texto (Branco) */
     --font-family: 'Arial', sans-serif; /* Fonte padrão */
 }
 
@@ -15,14 +15,20 @@ body {
     font-family: var(--font-family);
     margin: 0;
     padding: 0;
-    background-color: var(--color2); /* Cor de fundo (Branco) */
-    color: var(--color5); /* Cor do texto padrão (Cinza Escuro) */
+    background-color: var(--color2); /* Cor de fundo (Cor 2) */
+    color: var(--color5); /* Cor do texto padrão (Cor 5) */
+}
+.icon img {
+    max-width: 100%; /* A imagem não deve exceder a largura do contêiner */
+    height: auto; /* A altura ajustará automaticamente para manter a proporção */
+    display: block; /* Para evitar espaços indesejados abaixo da imagem */
+    margin: 0 auto; /* Centralize a imagem horizontalmente */
 }
 
 /* Estilo do cabeçalho (menu) */
 header {
-    background-color: var(--color1); /* Cor de fundo do cabeçalho (menu) (Bordô) */
-    border-top: 5px solid var(--color3); /* Contorno Dourado na parte superior */
+    background-color: var(--color1); /* Cor de fundo do cabeçalho (menu) (Cor 1) */
+    border-top: 5px solid var(--color3); /* Contorno na parte superior (Cor 3) */
     color: var(--text-color); /* Cor do texto do cabeçalho (menu) (Branco) */
     padding: 10px;
     text-align: center;
@@ -40,7 +46,7 @@ header h1 {
 
 /* Estilo do menu centralizado */
 .menu {
-    background-color: var(--color1); /* Cor de fundo do menu (Bordô) */
+    background-color: var(--color1); /* Cor de fundo do menu (Cor 1) */
     color: var(--text-color); /* Cor do texto do menu (Branco) */
     text-align: center;
 }
@@ -66,7 +72,7 @@ header h1 {
 }
 
 .menu ul li a:hover {
-    background-color: var(--color4); /* Cor de fundo no hover do menu (Marrom) */
+    background-color: var(--color4); /* Cor de fundo no hover do menu (Cor 4) */
 }
 
 /* Estilo da seção "Sobre Nós" */
@@ -85,7 +91,7 @@ header h1 {
 .about-us h2 {
     font-size: 24px;
     margin: 20px 0;
-    color: var(--color1); /* Cor do título da seção (Bordô) */
+    color: var(--text-color); /* Cor do título da seção (Cor 1) */
 }
 
 .about-us p {
@@ -97,7 +103,7 @@ header h1 {
 
 /* Estilo do rodapé */
 footer {
-    background-color: var(--color1); /* Cor de fundo do rodapé (Bordô) */
+    background-color: var(--color1); /* Cor de fundo do rodapé (Cor 1) */
     color: var(--text-color); /* Cor do texto do rodapé (Branco) */
     text-align: center;
     padding: 10px;
@@ -109,9 +115,6 @@ footer {
         flex-direction: column; /* Exibe os itens do menu verticalmente em telas menores */
     }
 }
-
-
-
 
 
 
