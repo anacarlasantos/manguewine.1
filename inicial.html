@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <!-- Configuração de media query -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MangueWine - Sua Adega de Vinhos</title>
+    <link rel="stylesheet" href="todos.css">
+      <style>
+        /* Estilos para a página inicial */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #67291e;
+    padding: 20px;
+    color: #e3d794;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+.section {
+    background-color: #e3d794; /* Cor de fundo alterada */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #67291e;
+}
+
+.section p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Diminuir o tamanho das imagens pela metade */
+.section img {
+    max-width: 50%; /* Alterado para 50% */
+    height: auto;
+    margin-top: 10px;
+}
+
+.section a {
+    text-decoration: none;
+    color: #67291e;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #67291e;
+    color: #e3d794;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Estilos responsivos para dispositivos móveis (como aplicativos) */
+@media screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    .section {
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .section h2 {
+        font-size: 20px;
+    }
+
+    .section p {
+        font-size: 14px;
+    }
+
+    /* Diminuir o tamanho das imagens pela metade em telas menores */
+    .section img {
+        max-width: 50%;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <!-- Botão de menu para telas pequenas -->
+        <button class="menu-button">Menu</button>
+        <div class="logo">
+            <img class="logo" src="./assents/img/logoamarela.png" alt="Mangue Wine Logo">
+        </div>
+    </header>
+    <nav class="menu">
+        <ul>
+            <li><a href="/inicial.html">Página Inicial</a></li>
+            <li><a href="./sobre.html">Sobre</a></li>
+            <li><a href="./produtos.html">Produtos</a></li>
+            <li><a href="./contato.html">Contato</a></li>
+            <li><a href="./eventos.html">Eventos</a></li>
+        </ul>
+    </nav>
+        
+    <div class="grid-container">
+        <section class="section about">
+            <img src="./assents/img/inicio3.jpg" alt="Imagem da Adega">
+            <h2>Sobre Nós</h2>
+            <p>Somos apaixonados por vinhos e estamos comprometidos em oferecer a você uma seleção exclusiva dos melhores vinhos de todo o mundo. Nossa adega é um local de encontro para entusiastas do vinho, onde você pode descobrir, aprender e desfrutar de experiências enológicas únicas.</p>
+            <a href="sobre.html">Saiba Mais</a>
+        </section>
+
+        <section class="section products">
+            <img src="./assents/img/inicio2.jpg" alt="Imagem de Garrafas de Vinho">
+            <h2>Nossos Produtos</h2>
+            <p>Explore nossa variedade de vinhos cuidadosamente selecionados. Temos vinhos tintos, brancos, rosés e espumantes de diferentes regiões vinícolas.</p>
+            <a href="produtos.html">Ver Produtos</a>
+        </section>
+
+        <section class="section events">
+            <img src="./assents/img/inicio1.jpg" alt="Imagem de Eventos de Degustação de Vinho">
+            <h2>Próximos Eventos</h2>
+            <p>Fique por dentro dos nossos eventos e degustações de vinho. Descubra novos sabores, conheça produtores e desfrute de momentos especiais em nossa adega.</p>
+            <a href="eventos.html">Ver Eventos</a>
+        </section>
+    </div>
+
+    <footer>
+        <div class="informacoes-contato">
+            <p>Entre em Contato:</p>
+            <p>Endereço: Rua Pinguin, 65 - San Martin, Recife</p>
+            <p>Telefone: +55 81 99755-5943</p>
+        </div>
+        <p>&copy; 2023 MangueWine</p>
+    </footer>
+    <script>
+        // JavaScript para mostrar/ocultar o menu em telas pequenas
+        const menuButton = document.querySelector('.menu-button');
+        const menu = document.querySelector('.menu ul');
+
+        menuButton.addEventListener('click', () => {
+            if (menu.style.display === 'block') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'block';
+            }
+        });
+    </script>
+</body>
+</html>

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Localização</title>
     <link rel="stylesheet" href="todos.css">
-    <script>
+   <script>
         document.addEventListener("DOMContentLoaded", () => {
             const getLocationButton = document.getElementById("getLocation");
             const userLocationSpan = document.getElementById("userLocation");
@@ -64,14 +64,16 @@
 </head>
 
 <body>
-    <header>
-        <div class="icon">
-            <img src="./assents/img/logoamarela.png" alt="Mangue Wine Logo">
+    <header class="header">
+        <!-- Botão de menu para telas pequenas -->
+        <button class="menu-button">Menu</button>
+        <div class="logo">
+            <img class="logo" src="./assents/img/logoamarela.png" alt="Mangue Wine Logo">
         </div>
     </header>
     <nav class="menu">
         <ul>
-            <li><a href="./index.html">Página Inicial</a></li>
+            <li><a href="/inicial.html">Página Inicial</a></li>
             <li><a href="./sobre.html">Sobre</a></li>
             <li><a href="./produtos.html">Produtos</a></li>
             <li><a href="./contato.html">Contato</a></li>
@@ -96,5 +98,18 @@
     <footer>
         <p>&copy; 2023 MangueWine</p>
     </footer>
+    <script>
+        // JavaScript para mostrar/ocultar o menu em telas pequenas
+        const menuButton = document.querySelector('.menu-button');
+        const menu = document.querySelector('.menu ul');
+
+        menuButton.addEventListener('click', () => {
+            if (menu.style.display === 'block') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'block';
+            }
+        });
+    </script>
 </body>
 </html>

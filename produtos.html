@@ -9,21 +9,22 @@
     <link rel="stylesheet" href="todos.css">
 </head>
 <body>
-    <header>
-        <div class="icon">
-            <img src="./assents/img/logoamarela.png" alt="Mangue Wine Logo">
+    <header class="header">
+        <!-- Botão de menu para telas pequenas -->
+        <button class="menu-button">Menu</button>
+        <div class="logo">
+            <img class="logo" src="./assents/img/logoamarela.png" alt="Mangue Wine Logo">
         </div>
     </header>
     <nav class="menu">
         <ul>
-            <li><a href="./index.html">Página Inicial</a></li>
+            <li><a href="/inicial.html">Página Inicial</a></li>
             <li><a href="./sobre.html">Sobre</a></li>
             <li><a href="./produtos.html">Produtos</a></li>
             <li><a href="./contato.html">Contato</a></li>
             <li><a href="./eventos.html">Eventos</a></li>
         </ul>
     </nav>
-
     <div class="product-container" id="produtos-container">
         <script>
        
@@ -69,6 +70,19 @@
     <footer>
         <p>&copy; 2023 MangueWine</p>
     </footer>
+    <script>
+        // JavaScript para mostrar/ocultar o menu em telas pequenas
+        const menuButton = document.querySelector('.menu-button');
+        const menu = document.querySelector('.menu ul');
+
+        menuButton.addEventListener('click', () => {
+            if (menu.style.display === 'block') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'block';
+            }
+        });
+    </script>
 </body>
 </html>
 

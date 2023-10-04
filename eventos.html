@@ -9,23 +9,26 @@
 </head>
 <body>
 
-<header>
-    <div class="icon">
-        <img src="./assents/img/logoamarela.png" alt="Mangue Wine Logo">
-    </div>
-    
+    <header class="header">
+        <!-- Botão de menu para telas pequenas -->
+        <button class="menu-button">Menu</button>
+        <div class="logo">
+            <img class="logo" src="./assents/img/logoamarela.png" alt="Mangue Wine Logo">
+        </div>
+    </header>
     <nav class="menu">
-        <ul> 
-            <li><a href="./index.html">Página Inicial</a></li>
+        <ul>
+            <li><a href="/inicial.html">Página Inicial</a></li>
             <li><a href="./sobre.html">Sobre</a></li>
             <li><a href="./produtos.html">Produtos</a></li>
             <li><a href="./contato.html">Contato</a></li>
             <li><a href="./eventos.html">Eventos</a></li>
         </ul>
     </nav>
+
+    <div class="Texto">
     <h1>Explore os melhores eventos relacionados a vinho.</h1>
-    <a href="#eventos-futuros" class="cta-button">Veja os Próximos Eventos</a>
-</header>
+</div>
 
 <section id="eventos-futuros" class="destaque">
     <h2>Eventos em Destaque</h2>
@@ -57,6 +60,19 @@
     </div>
     <p>&copy; 2023 Vinho Eventos</p>
 </footer>
+<script>
+    // JavaScript para mostrar/ocultar o menu em telas pequenas
+    const menuButton = document.querySelector('.menu-button');
+    const menu = document.querySelector('.menu ul');
+
+    menuButton.addEventListener('click', () => {
+        if (menu.style.display === 'block') {
+            menu.style.display = 'none';
+        } else {
+            menu.style.display = 'block';
+        }
+    });
+</script>
 
 </body>
 </html>

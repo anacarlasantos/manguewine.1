@@ -9,6 +9,47 @@
     --text-color: #e3d794; /* Cor do texto (Branco) */
     --font-family: 'Arial', sans-serif; /* Fonte padrão */
 }
+/* Estilos comuns */
+.logo {
+    max-width: 100%; /* A logo ocupará todo o espaço disponível */
+    height: auto; /* Altura automática para manter a proporção */
+}
+
+/* Estilos para telas menores (celulares) */
+@media screen and (max-width: 768px) {
+    .header {
+        display: flex;
+        flex-direction: row-reverse; /* Inverte a ordem de exibição em telas menores */
+        align-items: flex-start; /* Alinha verticalmente no topo em telas menores */
+        height: 100px; /* Define a altura do header */
+        margin: 0 auto;
+        width: 96%; /* Força o cabeçalho a ocupar toda a largura */
+    }
+    .logo {
+        max-width: 50%; /* Reduz a largura máxima da logo para 50% em telas menores (celulares) */
+        height: auto; /* Altura automática para manter a proporção */
+        float: left; /* Alinha a logo à esquerda */
+        margin-right: 20px; /* Adiciona margem direita para separar a logo do restante do conteúdo */
+    }
+     /* Estilos específicos para a logo em telas menores */
+
+    .menu-button {
+        display: block; /* Exibe o botão de menu em telas menores (celulares) */
+        margin-top: 10px; /* Adiciona margem superior ao botão de menu */
+    }
+
+    .menu ul {
+        display: none;
+    }
+ 
+}
+
+/* Estilos para telas maiores (computadores) */
+@media screen and (min-width: 769px) {
+    .menu-button {
+        display: none; /* Oculta o botão de menu em telas maiores (computadores) */
+    }
+}
 
 /* Estilo básico para o corpo da página com fundo marrom */
 body {
